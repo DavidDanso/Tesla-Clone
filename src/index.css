@@ -1,13 +1,79 @@
 body {
+  overflow-x: hidden;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+header,
+html,
+i,
+img,
+small,
+li,
+nav,
+span,
+ul,
+p,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::selection {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+/* Fonts */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "GothamSSm-Medium_Web";
+  src: url("./fonts/GothamSSm-Medium_Web.ttf");
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "GothamSSm-Light_Web";
+  src: url("./fonts/GothamSSm-Light_Web.ttf");
+}
+.page-content {
+  --bg-color: #fbfbfd;
+  --text-color: #1d1d1f;
+  --accent-color: #f00000;
+  --button-color: #5c5d61;
+  --header-font: "GothamSSm-Medium_Web";
+  --text-font: "GothamSSm-Light_Web";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes animationArrow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
